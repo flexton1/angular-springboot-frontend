@@ -1,0 +1,20 @@
+<form (ngSubmit)="saveExpense()">
+<div class="container">
+    
+    <button id="backbutton" class="btn btn-danger"><a id="link1" routerLink="/expenses"><i class="fa fa-arrow-left" aria-hidden="true"></i><p id="btntext">Go back without saving</p></a></button>
+    <h5 class="title is-5 has-text-centered">Adding a new expense</h5>
+
+</div>
+
+
+<div class="d-flex flex-wrap justify-content-center input-div">
+
+<input class="input-boxes input" type="text" name="expense" [(ngModel)]="expense.expense" placeholder="Enter the expense name"/>
+<input class="input-boxes input" type="text" name="amount" [(ngModel)]="expense.amount" placeholder="Enter the amount of the expense"/>
+<textarea class="textarea-input input" type="text" name="description" [(ngModel)]="expense.description" placeholder="Enter the description of the expense"></textarea>
+
+</div>
+<div class="d-flex flex-wrap justify-content-center buttons-div">
+<button id="addexbtn" class="btn btn-primary" type="submit">Add expense</button>
+</div>
+</form>

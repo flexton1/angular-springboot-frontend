@@ -1,0 +1,39 @@
+.input-boxes {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-width: 50%;
+    margin-top: 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+i {
+    margin-right: 3px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #btntext {
+        display: none;
+    }
+  }
+
+#backbutton { 
+    max-width: 18%;
+}
+
+.textarea-input {
+    max-width: 50%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.buttons-div {
+    padding-top: 5%;
+}
+
+#addexbtn {
+    margin-right: 3%;
+}

@@ -1,0 +1,14 @@
+
+<div class="container has-text-centered">
+
+<button class="btn btn-primary"><a routerLink="/addexpense">Add new expense</a></button>
+
+<div class="container">
+<div class="expense-div border rounded d-flex align-items-center justify-content-between" *ngFor="let expense of expenses">
+        <h3>{{expense.expense}}</h3>
+        <p id="amount1">{{ expense.amount | currency: 'USD' }}</p>
+       <button class="btn btn-info"> <a routerLink="/editexpense/{{ expense.id }}"><mat-icon>edit</mat-icon>Edit or delete expense</a></button>
+</div>
+</div>
+
+</div>
