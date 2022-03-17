@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 })
 export class ExpenseService {
 
-private getUrl: string = 'http://localhost:8080/api/v1/expenses';
+private getUrl: string = 'https://flexton1.github.io/springboot/api/v1/expenses';
 
   constructor(private _httpClient: HttpClient) { }
 
